@@ -8,12 +8,12 @@ import { allPosts, getPostsByTag } from "@/content";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Notes — A quiet blog" },
+      { title: "Weekly Blog — A quiet blog" },
       {
         name: "description",
         content: "A calm, Notion-inspired blog. Drop a post file in src/content/posts/ and it appears here, grouped by tag.",
       },
-      { property: "og:title", content: "Notes — A quiet blog" },
+      { property: "og:title", content: "Weekly Blog — A quiet blog" },
       {
         property: "og:description",
         content: "A calm, Notion-inspired blog. Drop a post file in src/content/posts/ and it appears here.",
