@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Github, Linkedin, Mail, Coffee } from "lucide-react";
 import { TopNav } from "@/components/blog/TopNav";
 import { Hero } from "@/components/blog/Hero";
 import { TagSection } from "@/components/blog/TagSection";
@@ -35,14 +36,12 @@ function Index() {
 
         {allPosts.length === 0 ? (
           <section className="mx-auto max-w-3xl px-6 py-24 text-center">
-            <h2 className="text-[26px] font-bold tracking-[-0.625px] text-ink">
-              No posts yet
-            </h2>
+            <h2 className="text-[26px] font-bold tracking-[-0.625px] text-ink">No posts yet</h2>
             <p className="mt-3 text-[16px] text-ink-muted">
               Create a file in{" "}
-              <code className="rounded bg-canvas px-1.5 py-0.5">src/content/posts/</code>{" "}
-              that exports a <code className="rounded bg-canvas px-1.5 py-0.5">post</code>{" "}
-              object — title, subtitle, url, image, and tags.
+              <code className="rounded bg-canvas px-1.5 py-0.5">src/content/posts/</code> that
+              exports a <code className="rounded bg-canvas px-1.5 py-0.5">post</code> object —
+              title, subtitle, url, image, and tags.
             </p>
           </section>
         ) : (
@@ -68,7 +67,54 @@ function Index() {
         )}
 
         <footer className="mt-20 border-t border-hairline py-10 text-center text-[14px] text-ink-faint">
-          Built by Derek Yuan {new Date().getFullYear()}
+          <p className="text-[20px] font-semibold text-ink mb-4">Derek Yuan</p>
+          <div className="flex justify-center gap-6 mb-4">
+            <a
+              href="https://github.com/derekyuan1000"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+              className="text-ink-muted hover:text-ink transition-colors"
+            >
+              <Github size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/derek-yuan-6900a6406/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              className="text-ink-muted hover:text-ink transition-colors"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href="mailto:contact@derekyuan.co.uk"
+              title="Email"
+              className="text-ink-muted hover:text-ink transition-colors"
+            >
+              <Mail size={20} />
+            </a>
+            <a
+              href="https://ko-fi.com/derekyuan"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Ko-fi"
+              className="text-ink-muted hover:text-ink transition-colors"
+            >
+              <Coffee size={20} />
+            </a>
+          </div>
+          <p>© {new Date().getFullYear()} Derek Yuan. All rights reserved.</p>
+          <p className="mt-2 text-[12px]">
+            <a
+              href="https://www.derekyuan.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-ink-muted transition-colors"
+            >
+              derekyuan.co.uk
+            </a>
+          </p>
         </footer>
       </main>
     </div>
