@@ -1,0 +1,14 @@
+name: Scheduled Deploy
+
+on:
+  schedule:
+    # 5pm BST (UTC+1) every Saturday = 16:00 UTC
+    - cron: "0 16 * * 6"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Deploy Hook
+        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
