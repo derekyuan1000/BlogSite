@@ -6,9 +6,21 @@ on:
     - cron: "0 16 * * 6"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Vercel Deploy Hook
-        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge saturday-post into master
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git merge origin/saturday-post
+          git push origin master
