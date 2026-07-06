@@ -8,5 +8,5 @@ export const post: Post = {
   image: "https://miro.medium.com/v2/resize:fit:640/format:webp/0*IN3oBLfx1FOSjA7X.jpg",
   tags: ["Politics"
   ],
-  date: "2026-06-20",
+  date: "2026-07-04",
 };
