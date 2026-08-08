@@ -7,7 +7,7 @@ export function TopNav() {
     <header className="sticky top-0 z-40 border-b border-hairline bg-canvas/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
         <a href="#top" className="flex items-center gap-2 text-ink">
-          <span className="text-[16px] font-semibold tracking-[-0.125px]">Weekly Blogs</span>
+          <span className="text-[16px] font-semibold tracking-[-0.125px]">Blogs</span>
         </a>
         <nav className="flex flex-wrap items-center gap-1.5">
           <a

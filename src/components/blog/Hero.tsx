@@ -9,7 +9,7 @@ export function Hero() {
         Latest articles
       </p>
       <h1 className="mt-4 max-w-3xl text-[40px] font-bold leading-[1.1] tracking-[-1px] text-ink md:text-[54px] md:leading-[1.04] md:tracking-[-1.875px]">
-        A weekly update on blogs posted by Derek Yuan
+        Updates on blogs posted by Derek Yuan
       </h1>
       <p className="mt-5 max-w-xl text-[16px] leading-[1.5] text-ink-muted">
         {allPosts.length} {allPosts.length === 1 ? "post" : "posts"} across {tagCount}{" "}

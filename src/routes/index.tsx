@@ -9,12 +9,12 @@ import { allPosts, getPostsByTag } from "@/content";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Derek's Weekly Blog" },
+      { title: "Derek's Blog" },
       {
         name: "description",
         content: "Redirecting static blog site for blogs",
       },
-      { property: "og:title", content: "Derek's Weekly Blog" },
+      { property: "og:title", content: "Derek's Blog" },
       {
         property: "og:description",
         content: "Redirecting static blog site for blogs",
