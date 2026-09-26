@@ -8,5 +8,5 @@ export const post: Post = {
   url: "https://medium.com/@derekyuan10000/disaster-for-the-cdu-rise-of-radicalisation-in-germany-once-again-e15cddbd9706?source=friends_link&sk=0f057de1dbd9d4f1654a5c3402e08e91",
   image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*rFkH9oHjxoH82YNE.jpg",
   tags: ["Politics"],
-  date: "2026-09-26",
+  date: "2026-09-18",
 };
