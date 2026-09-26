@@ -8,5 +8,5 @@ export const post: Post = {
   url: "https://medium.com/@derekyuan10000/are-ai-stocks-actually-in-a-bubble-or-is-this-1999-vs-2005-0ac89ae81a92?source=friends_link&sk=afb7f5b80905a6a9f2e7725994b80054",
   image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*0UBJAUSSbXJbNwCe",
   tags: ["Finance"],
-  date: "2026-09-25",
+  date: "2026-09-26",
 };
